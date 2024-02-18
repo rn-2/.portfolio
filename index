@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio - RY</title>
+        <meta name="description" content="Portfolioです。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <meta property="og:url" content="http://example.com/index.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Portfolioです。">
+        <meta property="og:description" content="Webデザイナー安岡のPortfolioです。">
+        <meta property="og:image" content="http://example.com/images/ogp.jpg">
+
+    
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.cdnfonts.com/css/selino" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="home">
+            <header class="page-header wrapper">
+                <h1><a href="index.html"><img class="logo" src="images/logo.svg"></a></h1>
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="home-content wrapper">
+                <h2 class="page-title">Portfolio</h2>
+                <h3><span>————&ensp;</span>Ran Yasuoka</h3>
+            </div><!-- /.home-content-->
+        </div><!-- /#home -->
+
+        <div id="profile">
+            <h2 class="page-title">Profile</h2>
+            
+            <div class="profile-contents wrapper">
+                <img src="images/top-profile.jpg" alt="profile">
+            
+                <div class="profile-contents-1">
+                    <h3>Ran Yasuoka</h3>
+                    <h3>安岡 蘭</h3>
+                    <p>大阪出身。<br>
+                    海外と関連深い仕事がしたく、商社メーカーで物流・調達・IR関連業務等の多岐に渡る業務に約３年従事。</p>
+                    <a class="button" href="about.html">View more</a>
+                </div>
+            </div><!-- /.profile-contents -->
+            <div class="line-1"></div>
+        </div><!-- /#profile -->
+        
+        <div id="work">
+            <h2 class="page-title">Work</h2>
+
+            <div class="wrapper grid">
+                <div class="item">
+                    <img src="images/work_ex1.svg" alt="仕事例1">
+                    <p>テキストテキスト</p>
+                </div>
+                <div class="item">
+                    <img src="images/work_ex2.svg" alt="仕事例2">
+                    <p>テキストテキスト</p>
+                </div>
+                <div class="item">
+                    <img src="images/work_ex3.svg" alt="仕事例3">
+                    <p>テキストテキスト</p>
+                </div>
+                <div class="item">
+                    <img src="images/work_ex4.svg" alt="仕事例4">
+                    <p>テキストテキスト</p>
+                </div>
+            </div><!-- /.grid -->
+            <a class="button wrapper" href="work.html">View more</a>
+        </div><!-- /#work -->
+
+        <div id="contact">
+            <img src="images/path_2.svg">
+            <h2 class="page-title">Contact</h2>
+                    <form action="#">
+                        <p>お仕事に関しては以下フォームより、お問合せをお願いいたします。</p>
+                        <div>
+                            <label for="company">会社名</label>
+                            <input type="text" id="company" name="your-company-name">
+                        </div>    
+                        <div>
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="your-name">
+                        </div>
+                        <div>
+                            <label for="phone">電話番号</label>
+                            <input type="text" id="phone" name="your-phone">
+                        </div>
+                        <div>
+                            <label for="e-mail">メールアドレス</label>
+                            <input type="email" id="email" name="your-email">
+                        </div>
+                        <div>
+                            <label for="message">お問合せ内容</label>
+                            <textarea id="message" name="your-message"></textarea>
+                        </div>
+
+                        <input type="submit" class="button" value="送信">
+                </form>
+        </div>
+    </body>
+
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; ©️ All rights reserved ︴ Ran Yasuoka</small></p>
+        </div>
+    </footer>
+</html>
