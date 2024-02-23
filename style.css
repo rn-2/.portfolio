@@ -98,7 +98,7 @@ img {
     background-position: center left;
 }
 #home {
-    background-image: url(images/main-bg.svg);
+    background-image: url(../images/main-bg.svg);
     min-height: 100vh;
     background-size: 45%;
     background-position-x: 20%;
