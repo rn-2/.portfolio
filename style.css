@@ -17,7 +17,7 @@ img {
     max-width: 100%;
 }
 .line-1 {
-    background-image: url(../images/path_1.svg);
+    background-image: url(images/path_1.svg);
     background-size: cover;
     height: 100px;
     width: 100%;
