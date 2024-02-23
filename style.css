@@ -40,10 +40,24 @@ img {
 }
 .main-nav a {
     color: #432;
+    position: relative;
 }
-.main-nav a:hover {
-    color: aqua;
-}
+.main-nav a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #432;
+    bottom: -5px;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform 0.3s;  
+    }
+.main-nav a:hover::after {
+    transform-origin: center top; 
+    transform: scale(1, 1);
+    }
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -98,7 +112,6 @@ img {
 ----------------------------------------------*/
 #profile {
     height: 500px;
-    margin-bottom: 40px
 }
 #profile .page-title,
 #work .page-title,
@@ -130,14 +143,27 @@ img {
 
 /* ボタン */
 .button {
-    background: #fff;
+    position: relative;
     color: #432;
     font-size: 1.25rem;
     letter-spacing: 3px;
     padding: 18px 32px;
 }
-.button:hover {
-    background: #eef0f0;
+.button::after {
+    position: absolute;
+    background: #432;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    transform: scale(0, 1);
+    transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.3s;  /*変形の時間*/
+}
+.button:hover::after {
+    transform-origin: left top; /*左から右に向かう*/
+    transform: scale(1, 1);
 }
 
 /* Work
@@ -200,6 +226,20 @@ input[type="submit"] {
     cursor: pointer;
     line-height: 1;
 }
+/* 送信ボタン */
+.button-submit {
+    display: block;
+    margin: auto;
+    background: #000;
+    color: #fff;
+    padding: 18px 32px;
+    margin-bottom: 15px;
+}
+.button-submit:hover {
+    background: #fff;
+    color: #432;
+    border: 1px solid #432;
+}
 
 /* フッター
 ----------------------------------------------*/
@@ -221,23 +261,9 @@ footer p {
 
 
 
-/* MENU
+/* ABOUT
 ----------------------------------------------*/
-#menu {
-    background-image: url(../images/main-bg.jpg);
-    height: 100vh;
-}
-.menu-content {
-    max-width: 560px;
-    margin-top: 10%;
-}
-.menu-content .page-title {
-    text-align: center;
-}
-.menu-content p {
-    font-size: 1.125rem;
-    margin: 10px 0 0;
-}
+
 
 
 /* 店舗情報・地図 */
