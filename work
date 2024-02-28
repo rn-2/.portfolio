@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio - RY</title>
+        <meta name="description" content="Portfolioです。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <meta property="og:url" content="http://example.com/index.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Portfolioです。">
+        <meta property="og:description" content="Webデザイナー安岡のPortfolioです。">
+        <meta property="og:image" content="http://example.com/images/ogp.jpg">
+
+    
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.cdnfonts.com/css/selino" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+            <header class="page-header wrapper">
+                <h1><a href="index.html"><img class="logo" src="images/logo.svg"></a></h1>
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <div id="Work">
+            <h2 class="section-title">Work</h2>
+            <div class="wrapper grid">
+                <div class="item">
+                    <a href="work_1.html"><img src="images/work_ex1.svg" alt="仕事例1"></a>
+                    <p>テキストテキスト</p>
+                </div>
+                <div class="item">
+                    <a href="work_1.html"><img src="images/work_ex2.svg" alt="仕事例2"></a>
+                    <p>テキストテキスト</p>
+                </div>
+                <div class="item">
+                    <a href="work_1.html"><img src="images/work_ex3.svg" alt="仕事例3"></a>
+                    <p>テキストテキスト</p>
+                </div>
+                <div class="item">
+                    <a href="work_1.html"><img src="images/work_ex4.svg" alt="仕事例4"></a>
+                    <p>テキストテキスト</p>
+                </div>
+            </div><!-- /.grid -->
+        </div><!-- /#work -->
+    </body>
+
+    <footer>
+        <img src="images/path_1.svg">
+        <div class="wrapper">
+            <p><small>&copy; ©️ All rights reserved ︴ Ran Yasuoka</small></p>
+        </div>
+    </footer>
+</html>
