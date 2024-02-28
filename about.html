@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link href="https://fonts.cdnfonts.com/css/selino" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <link href="charts.min.css" rel="stylesheet">
     </head>
     
     <body>
@@ -30,47 +31,114 @@
             </nav>
         </header>
         <div id="profile">
-            <h2 class="page-title">Profile</h2>
+            <h2 class="section-title">Profile</h2>
             
             <div class="profile-contents wrapper">
                 <img src="images/top-profile.jpg" alt="profile">
             
                 <div class="profile-contents-1">
-                    <h2>Ran Yasuoka</h2>
-                    <h3>安岡 蘭</h3>
+                    <h3>Ran Yasuoka</h3>
+                    <h4>安岡 蘭</h4>
                     <p>大学卒業後、メーカー商社で調達・物流・IR関連業務等の多岐に渡った業務に従事しながら、2023年12月よりWebデザイナーを目指し、勉強しています。海外と関連深い仕事がしたく、商社メーカーで物流・調達・IR関連業務等の多岐に渡る業務に約３年従事。</p>
                     <p>Webデザイナーを目指したきっかけ：<br>仕事でプレゼン資料等を作成する機会が多々あり、より深いスキルを身につけたいと思い、Webデザイナーに興味を持ち始めました。</p>
                 </div>
             </div><!-- /.profile-contents -->
-            <!-- 波線挿入 -->
         </div><!-- /#profile -->
     
-        <section>
-            <h2 class="page-title">Skills</h2>
+        <div id="skills">
+            <img src="images/path_1.svg">
+            <h2 class="section-title">Skills</h2>
             <div class="wrapper grid">
                 <div class="item">
-                    <img src="images/work_ex1.svg" alt="仕事例1">
-                    <p>テキストテキスト</p>
+                    <h3>Web Design</h3>
+                    <div id="my-chart">
+                        <table class="charts-css bar show-labels data-spacing-13">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Skill1</th>
+                                    <td style="--size: 0.4"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Skill2</th>
+                                    <td style="--size: 0.4"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Skill3</th>
+                                    <td style="--size: 0.8"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Skill4</th>
+                                    <td style="--size: 0.4"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Skill5</th>
+                                    <td style="--size: 0.4"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="item">
-                    <img src="images/work_ex2.svg" alt="仕事例2">
-                    <p>テキストテキスト</p>
-                </div>
-                <div class="item">
-                    <img src="images/work_ex3.svg" alt="仕事例3">
-                    <p>テキストテキスト</p>
-                </div>
-                <div class="item">
-                    <img src="images/work_ex4.svg" alt="仕事例4">
-                    <p>テキストテキスト</p>
+                    <h3>Others</h3>
+                    <div id="my-chart">
+                        <table class="charts-css bar show-labels data-spacing-13">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Skill1</th>
+                                    <td style="--size: 0.4"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Skill2</th>
+                                    <td style="--size: 0.4"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Skill3</th>
+                                    <td style="--size: 0.8"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Skill4</th>
+                                    <td style="--size: 0.4"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Skill5</th>
+                                    <td style="--size: 0.4"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div><!-- /.grid -->
-        </section> 
+        </div><!-- /#Skills-->
+
+        <div id="hobbies">
+            <img src="images/path_2.svg">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="wrapper grid-hobby">
+                <div class="item">
+                    <img src="images/hobby_movie.svg">
+                    <h3>Movie</h3>
+                    <p>Marvelを中心にアクション映画が特に好きですが、様々なジャンルに挑戦しています。</p>
+                </div>
+                <div class="item">
+                    <img src="images/hobby_travel.svg">
+                    <h3>Travel</h3>
+                    <p>国内・海外問わず、長期休暇が取れた際には必ずどこかに行っています。次はヨーロッパ旅行を計画中です！</p>
+                </div>
+                <div class="item">
+                    <img src="images/hobby_crochet.svg">
+                    <h3>Crochet</h3>
+                    <p>始めて間もないですが、チュートリアル動画を見ながらコツコツと作成しています。ラジオを聴きながらの編み物が幸せな時間です。</p>
+                </div>
+            </div>
+            
+        </div> 
     </body>
 
     <footer>
+        <img src="images/path_1.svg">
         <div class="wrapper">
             <p><small>&copy; ©️ All rights reserved ︴ Ran Yasuoka</small></p>
         </div>
     </footer>
 </html>
+
