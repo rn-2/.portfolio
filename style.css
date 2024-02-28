@@ -12,17 +12,11 @@ body {
 a {
     text-decoration: none;
 }
-
 img {
     max-width: 100%;
 }
-.line-1 {
-    background-image: url(images/path_1.svg);
-    background-size: cover;
-    height: 100px;
-    width: 100%;
-}
-img[src="images/path_2.svg"] {
+img[src="images/path_2.svg"],
+img[src="images/path_1.svg"] {
     background-size: cover;
     width: 100%;
 }
@@ -39,7 +33,7 @@ img[src="images/path_2.svg"] {
     text-transform: uppercase;
 }
 .main-nav li {
-    margin-left: 36px;
+    margin-left: 70px;
 }
 .main-nav a {
     color: #432;
@@ -70,7 +64,6 @@ img[src="images/path_2.svg"] {
     margin: 0 auto;
     padding: 0 4%;
 }
-
 /* HOME
 ----------------------------------------------*/
 .home-content {
@@ -79,7 +72,6 @@ img[src="images/path_2.svg"] {
     margin-top: 10%;
     letter-spacing: 5px;
 }
-
 .home-content span {
     font-family: 'Mincho', serif;
     letter-spacing: -5px;
@@ -88,18 +80,10 @@ img[src="images/path_2.svg"] {
 /* 見出し */
 .page-title {
     font-size: 5rem;
-    text-transform: uppercase;
     font-weight: normal;
-}
-.home-content h3 {
-    font-size: 3.5rem;
 }
 
 /* 大きな背景画像 */
-.big-bg {
-    background-size: none;
-    background-position: center left;
-}
 #home {
     background-image: url(images/main-bg.svg);
     min-height: 100vh;
@@ -111,23 +95,33 @@ img[src="images/path_2.svg"] {
     text-transform: none;
 }
 
+/* トップページ花 */
+img[src="images/orchid_1.svg"] {
+    position: absolute;
+    left: 87%;
+    top: 85%;
+}
+    
 /* Profile
 ----------------------------------------------*/
 #profile {
-    height: 500px;
+    margin-bottom: 50px;
 }
-#profile .page-title,
-#work .page-title,
-#contact .page-title {
+.section-title {
     text-align: center;
     font-size: 3rem;
     letter-spacing: 5px;
     margin-bottom: 30px;
 }
-#profile .profile-contents {
+.profile-contents {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+.profile-contents-1 h3,
+.item h3 {
+    letter-spacing: 3px;
+    font-size: 30px;
 }
 
 /* プロフィール画像 */
@@ -140,13 +134,18 @@ img[src="images/path_2.svg"] {
 .profile-contents-1 {
     width: 50%;
 }
-.profile-contents-1 p {
-    padding: 30px 0px;
+.profile-contents-1 h4 {
+    margin-bottom: 30px;
 }
-
+.profile-contents-1 p {
+    margin-bottom: 30px;
+    font-family: "Yu Gothic Medium";
+    font-weight: lighter;
+}
 /* ボタン */
 .button {
     position: relative;
+    left: 60%;
     color: #432;
     font-size: 1.25rem;
     letter-spacing: 3px;
@@ -168,23 +167,66 @@ img[src="images/path_2.svg"] {
     transform-origin: left top; /*左から右に向かう*/
     transform: scale(1, 1);
 }
-
+/* 矢印 */
+.arrow{
+	position: relative;
+	display: inline-block;
+	padding: 0 0 0 16px;
+	color: #000;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 15px;
+}
+.arrow::before,
+.arrow::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+.arrow-1::before{
+	left: 10px;
+	width: 11px;
+	height: 11px;
+	border-top: 1px solid #432;
+	border-right: 1px solid #432;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
 /* Work
 ----------------------------------------------*/
 #work {
     background: #000;
     color: #fff;
-    height: 500px;
-    padding-top: 50px;
 }
 .grid {
     display: grid;
     gap: 26px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    margin-top: 6%;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     margin-bottom: 50px;
 }
-
+#work .button {
+    color: #FFF;
+}
+#work .button::after {
+    background: #FFF;
+}
+#work .button {
+    position: relative;
+    left: 80%;
+}
+#work .arrow-1::before{
+	left: 10px;
+	width: 11px;
+	height: 11px;
+	border-top: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
 /* CONTACT
 ----------------------------------------------*/
 /* フォーム */
@@ -198,6 +240,9 @@ form p {
 }
 #contact {
     position: center;
+}
+#contact span {
+    color: rgb(204, 29, 29);
 }
 form div {
     margin-bottom: 14px;
@@ -225,7 +270,6 @@ textarea {
     height: 6rem;
 }
 input[type="submit"] {
-    border: none;
     cursor: pointer;
     line-height: 1;
 }
@@ -236,7 +280,8 @@ input[type="submit"] {
     background: #000;
     color: #fff;
     padding: 18px 32px;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
+    border: 1px solid #432;
 }
 .button-submit:hover {
     background: #fff;
@@ -244,70 +289,73 @@ input[type="submit"] {
     border: 1px solid #432;
 }
 
+/* Skills
+----------------------------------------------*/
+#skills {
+    background: #000;
+    color: #FFF;
+    height: 600px;
+}
+/* グラフ */
+#my-chart {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#my-chart .bar {
+    --color: #FFF
+}
+
+/* Hobbies */
+.grid-hobby {
+    display: grid;
+    gap: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#hobbies img {
+    margin-bottom: 15px;
+}
+
+/* ワークの仮想ページ
+----------------------------------------------*/
+#work-specific .section-title {
+    text-align: left;
+    margin-bottom: 0;
+}
+#work-specific a {
+    display: block;
+    margin-bottom: 20px;
+}
+#work-specific img {
+    width: 1200px;
+}
+.work-text {
+    display: block;
+    margin-bottom: 60px;
+}
+.work-title {
+    width: 30%;
+}
+.work-main {
+    display: flex;
+    margin-bottom: 50px;
+}
+
 /* フッター
 ----------------------------------------------*/
 footer {
     background: #000;
     text-align: center;
-    padding: 26px 0;
+    padding-bottom: 26px;
 }
 footer p {
     color: #fff;
     letter-spacing: 2px;
 }
 
-
-
-
-
-
-
-
-
-/* ABOUT
-----------------------------------------------*/
-
-
-
-/* 店舗情報・地図 */
-#location {
-    padding: 4% 0;
-    background: #FAF7F0;
-}
-#location .wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-.location-info {
-    width: 22%;
-}
-.location-info p {
-    padding: 12px 0;
-}
-.location-map {
-    width: 74%;
-}
-
-/* iframe */
-iframe {
-    width: 100%;
-}
-
-/* SNS */
-#sns {
-    background: #FAF7F0;
-    padding: 4% 0;
-}
-#sns .wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-#sns .sub-title {
-    margin-bottom: 30px;
-}
-.sns-box {
-    width: 30%;
-}
 
 /* モバイル版
 ----------------------------------------------*/
@@ -384,4 +432,6 @@ iframe {
     textarea {
         max-width: 100%;
     }
+
+    
 } /* モバイル版 END ------------------------------- */
