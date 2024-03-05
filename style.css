@@ -12,9 +12,6 @@ body {
 a {
     text-decoration: none;
 }
-img {
-    max-width: 100%;
-}
 img[src="images/path_2.svg"],
 img[src="images/path_1.svg"] {
     background-size: cover;
@@ -90,6 +87,7 @@ img[src="images/path_1.svg"] {
     background-size: 45%;
     background-position-x: 20%;
     background-position-y: 60%;
+    margin-bottom: 100px;
 }
 #home .page-title {
     text-transform: none;
@@ -126,8 +124,8 @@ img[src="images/orchid_1.svg"] {
 
 /* プロフィール画像 */
 .profile-contents img {
-    width: 50%;
-    margin: 0% 10%;
+    width: 30%;
+    margin: 0% 5%;
 }
 
 /*　プロフィール説明 */
@@ -175,7 +173,6 @@ img[src="images/orchid_1.svg"] {
 	color: #000;
 	vertical-align: middle;
 	text-decoration: none;
-	font-size: 15px;
 }
 .arrow::before,
 .arrow::after{
@@ -186,14 +183,14 @@ img[src="images/orchid_1.svg"] {
 	margin: auto;
 	content: "";
 	vertical-align: middle;
+    margin-top: 9px;
 }
-.arrow-1::before{
+.arrow::before{
 	left: 10px;
 	width: 11px;
 	height: 11px;
 	border-top: 1px solid #432;
 	border-right: 1px solid #432;
-	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 /* Work
@@ -215,17 +212,13 @@ img[src="images/orchid_1.svg"] {
     background: #FFF;
 }
 #work .button {
-    position: relative;
-    left: 80%;
+    left: 73%;
 }
 #work .arrow-1::before{
-	left: 10px;
-	width: 11px;
-	height: 11px;
 	border-top: 1px solid #FFF;
 	border-right: 1px solid #FFF;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: -8px;
 }
 /* CONTACT
 ----------------------------------------------*/
