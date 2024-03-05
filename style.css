@@ -323,7 +323,7 @@ input[type="submit"] {
     margin-bottom: 20px;
 }
 #work-specific img {
-    width: 1200px;
+    width: 100%;
 }
 .work-text {
     display: block;
