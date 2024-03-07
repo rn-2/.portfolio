@@ -81,7 +81,7 @@ img[src="images/path_1.svg"] {
 }
 
 /* 大きな背景画像 */
-#home {
+ #home {
     background-image: url(images/main-bg.svg);
     min-height: 100vh;
     background-size: 45%;
@@ -358,60 +358,48 @@ footer p {
     }
 
     /* HEADER */
-    .main-nav {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-    .main-nav li {
-        margin: 0 20px;
-    }
-    .page-header {
-        flex-direction: column;
-        align-items: center;
-    }
+    .main-nav,
+    img[src="images/orchid_1.svg"],
+    span {
+        display: none;
+    }   
 
     /* HOME */
     .home-content {
-        margin-top: 20%;
+        margin-top: 0%;
+        margin-left: 10%;
     }
-    .big-bg {
-        background-size: none;
-        background-position: center;
+    #home {
+        background-image: url(images/main-bg_sml.svg);
+        background-size: 75%;
+        background-position-x: 80%;
+        background-position-y: 25%;
+        margin-bottom: 15px;
+    }
+    .logo {
+        margin-top: 0;
     }
 
-    /* NEWS */
-    .news-contents {
-        flex-direction: column;
+    /* 見出し */
+    .section-title {
+        font-size: 2.4rem;
     }
-    article,
-    aside {
+
+    /* Profile */
+    .profile-contents {
+        display: block;
+        text-align: center;
+    }
+    .profile-contents-1 {
         width: 100%;
     }
-    #news .page-title {
-        margin-top: 30px;
+    .button {
+        left: 0;
     }
-    aside {
-        margin-top: 60px;
-    }
-    .post-date {
-        width: 70px;
-        height: 70px;
-        font-size: 1rem;
-    }
-    .post-date span {
-        font-size: 0.875rem;
-        padding-top: 2px;
-    }
-    .post-title {
-        font-size: 1.375rem;
-    }
-    .post-cat {
-        font-size: 0.875rem;
-        margin-top: 10px;
-    }
-    .post-title,
-    .post-cat {
-        margin-left: 80px;
+
+    /* プロフィール画像 */
+    .profile-contents img {
+        width: 60%;
     }
 
     /* CONTACT */
@@ -424,6 +412,9 @@ footer p {
     input[type="email"],
     textarea {
         max-width: 100%;
+    }
+    form {
+        padding: 0 4%;
     }
 
     
