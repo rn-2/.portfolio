@@ -22,13 +22,22 @@
     <body>
         <header class="page-header wrapper">
             <h1><a href="index.html"><img class="logo" src="images/logo.svg"></a></h1>
-            <nav>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+             <!-- ハンバーガーアイコン -->
+             <label for="drawer_input" class="drawer_open"><span></span></label>
+            <nav class="nav_content"><!-- メニュー -->
                 <ul class="main-nav">
                     <li><a href="about.html">About</a></li>
                     <li><a href="work.html">Work</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            </div>
         </header>
         <div id="profile">
             <h2 class="section-title">Profile</h2>
