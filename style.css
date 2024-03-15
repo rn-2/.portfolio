@@ -314,7 +314,7 @@ input[type="submit"] {
 #skills {
     background: #000;
     color: #FFF;
-    height: 66vh;
+    height: 80vh;
 }
 /* グラフ */
 #my-chart {
@@ -538,7 +538,7 @@ span {
 
     /* Skills */
     #skills {
-        height: 90vh;
+        height: 115vh;
     }
     #skills .grid {
         place-items: normal;
