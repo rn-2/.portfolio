@@ -229,6 +229,7 @@ img[src="images/orchid_1.svg"] {
 }
 #work .button {
     color: #FFF;
+    margin-bottom: 5px;
 }
 #work .button::after {
     background: #FFF;
