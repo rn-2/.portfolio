@@ -544,7 +544,7 @@ span {
 
     /* Skills */
     #skills {
-        height: 95vh;
+        height: 90vh;
     }
     #skills .grid {
         place-items: normal;
