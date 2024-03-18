@@ -4,8 +4,9 @@
 html {
     font-size: 100%;
 }
+                
 body {
-    font-family: "selino", "Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    font-family: "Selino", sans-serif, "Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
     line-height: 1.7;
     color: #432;
 }
@@ -487,8 +488,9 @@ span {
         background-image: url(images/main-bg_sml.svg);
         background-size: 75%;
         background-position-x: 80%;
-        background-position-y: 25%;
+        background-position-y: 55%;
         margin-bottom: 15px;
+        min-height: 65vh;
     }
     .logo {
         margin-top: 0;
@@ -509,6 +511,9 @@ span {
     }
     .sp_br {
         display: block;
+    }
+    .p_profile {
+        text-align: left;
     }
     .button {
         margin: 20px;
@@ -539,7 +544,7 @@ span {
 
     /* Skills */
     #skills {
-        height: 115vh;
+        height: 95vh;
     }
     #skills .grid {
         place-items: normal;
