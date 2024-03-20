@@ -18,6 +18,7 @@ img[src="images/path_2.svg"],
 img[src="images/path_1.svg"] {
     background-size: cover;
     width: 100%;
+    vertical-align: bottom;
 }
 /* HEADER
 ----------------------------------------------*/
@@ -392,7 +393,6 @@ footer p {
 .page-title {
     font-size: 2.5rem;
 }
-
 /* HEADER */
 img[src="images/orchid_1.svg"],
 span {
@@ -506,13 +506,11 @@ span {
     /* Profile */
     .profile-contents {
         display: block;
+        display: block;
         text-align: center;
     }
     .profile-contents-1 {
         width: 100%;
-    }
-    .sp_br {
-        display: block;
     }
     .p_profile {
         text-align: left;
